@@ -5,7 +5,7 @@ import App from './App.jsx'
 import{BrowserRouter, Routes,Route} from "react-router-dom"
 
 
-const root = ReactDom.createRoot(document.getElementsById("root"));
+const root = createRoot(document.getElementById("root"));
 
 root.render(
   <StrictMode>
