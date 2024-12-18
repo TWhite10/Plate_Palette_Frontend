@@ -9,12 +9,12 @@ function Nav() {
 
                 <nav className="nav-bar" aria-label="Main Navigation" role="navigation" >
                     <ul>
-                    <li><a href="...">Home</a></li>
-                        <li><a href="...">Food Daily</a></li>
-                        <li><a href="...">Recipe Drive</a></li>
-                        <li><a href="...">On the Street Food</a></li>
-                        <li><a href="...">Vegan</a></li>
-                        <li><a href="...">About</a></li>
+                    <li><a href="/">Home</a></li>
+                        <li><a href="/recipes">All Recipes</a></li>
+                        <li><a href="/categories">Categories</a></li>
+                        <li><a href="/create">Create Recipe</a></li>
+                        <li><a href="/profile">My Kitchen</a></li>
+                        <li><a href="/about">About</a></li>
                     </ul>
                 </nav>
             </header>
