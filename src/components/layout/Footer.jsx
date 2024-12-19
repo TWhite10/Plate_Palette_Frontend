@@ -22,6 +22,7 @@ function Footer() {
               <a href="/about">About</a>
             </li>
           </ul>
+          
           <p className="copyright">copyright 2024 &copy;</p>
         </nav>
       </footer>

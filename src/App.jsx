@@ -3,14 +3,16 @@ import { useState } from 'react'
 import Header from "./components/layout/Header";
 import Nav from "./components/layout/Nav";
 import Footer from "./components/layout/Footer";
+import Home from "./components/pages/Home.jsx"
 import Recipes from "./components/pages/AllRecipes.jsx"
 import Categories from "./components/pages/Categories";
 import Create from "./components/pages/CreateRecipe";
 import MyKitchen from "./components/pages/MyKitchen";
 import About from "./components/pages/About";
+import Login from "./components/userLog/Login.jsx";
 import './styles/App.css'
+
 function App() {
-  
   return (
     <div className='App'>
     <Header/>
@@ -23,6 +25,7 @@ function App() {
         <Route path="/create" element={<Create />} />
         <Route path="/mykitchen" element={<MyKitchen/>}/>
         <Route path="/about" element={<About/>}/>
+        <Route path="/login" element={<Login/>}/>
      
       </Routes>
 
