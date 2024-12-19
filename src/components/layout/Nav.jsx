@@ -1,5 +1,5 @@
 import React from "react";
-import { isLoggedIn, logout } from "../../App";
+import { isLoggedIn, logout } from "../../Utilities/auth";
 
 function Nav() {
   return (
