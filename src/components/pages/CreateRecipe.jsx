@@ -9,6 +9,8 @@ function CreateRecipe() {
   const [error, setError] = useState(""); 
   const navigate = useNavigate();
 
+
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -17,20 +19,26 @@ function CreateRecipe() {
       return;
     }
     try {
+        const token = localStorage.getItem("token"); 
+        if (!token) {
+          setError("Please login first");
+          navigate("/login");
+          return;
+        }
       const response = await fetch("http://localhost:5050/recipes", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${getAuthToken()}`,
+          Authorization: token,
         },
         body: JSON.stringify({
           title,
           instructions,
           cookTime: Number(cookTime),
-          user: "123",
+          user: userId,
         }),
       });
-
+    
       if (response.ok) {
         navigate("/recipes");
       } else {
@@ -48,8 +56,10 @@ function CreateRecipe() {
 
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Recipe Title:</label>
+          <label htmlFor="title">Recipe Title:</label>
           <input
+          id="title"
+          name="title"
             type="text"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
@@ -57,8 +67,10 @@ function CreateRecipe() {
           />
         </div>
         <div>
-          <label>Instructions:</label>
+          <label htmlFor="instructions">Instructions:</label>
           <textarea
+          id="instructions"
+          name="instructions" 
             value={instructions}
             onChange={(e) => setInstructions(e.target.value)}
             required
@@ -66,9 +78,11 @@ function CreateRecipe() {
           />
         </div>
         <div>
-          <label>Cooking Time (minutes):</label>
+          <label htmlFor="cookTime">CookTime (minutes):</label>
           <input
             type="number"
+            id="cookTime"
+            name ="cookTime"
             value={cookTime}
             onChange={(e) => setCookTime(e.target.value)}
             required

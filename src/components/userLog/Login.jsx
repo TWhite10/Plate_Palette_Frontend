@@ -21,9 +21,11 @@ function Login() {
         });
   
         const data = await response.json();
+     
 
         if (response.ok) {
             localStorage.setItem("token", data.data.tokens.accessToken);
+            localStorage.setItem('userId', data.data.user._id);
             navigate("/profile");
           } else {
             setError(data.error.message);
