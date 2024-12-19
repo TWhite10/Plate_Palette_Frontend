@@ -25,10 +25,9 @@ function Register() {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    body: JSON.stringify({ username, email, password }),
                 },
-
-            })
+                body: JSON.stringify({ username, email, password }), 
+            });
             const data = await response.json();
             if (response.ok) {
 
@@ -78,7 +77,7 @@ function Register() {
           <label>confirmPassword:</label>
           <input
             type="password"
-            value={password}
+            value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
             required
           />

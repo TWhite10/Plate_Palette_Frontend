@@ -18,4 +18,5 @@ https://stackoverflow.com/questions/18802114/how-do-you-put-a-user-name-password
 https://blog.logrocket.com/handling-user-authentication-redux-toolkit/
 
 https://stackoverflow.com/questions/46445615/localstorage-getitemkey-sometimes-returns-null-in-a-react-app
-https://www.geeksforgeeks.org/navigate-component-in-react-router/
+https://www.geeksforgeeks.org/navigate-component-in-react-router/ 
+https://www.w3schools.com/react/react_forms.asp
