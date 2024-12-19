@@ -14,3 +14,7 @@ https://www.geeksforgeeks.org/how-to-create-a-multi-page-website-using-react-js/
 https://www.pexels.com/search/food/
 https://stackoverflow.com/questions/73721043/react-router-usenavigate-with-a-useeffect-hook-proper-way-to-use
 https://stackoverflow.com/questions/18802114/how-do-you-put-a-user-name-password-in-json-format
+
+https://blog.logrocket.com/handling-user-authentication-redux-toolkit/
+
+https://stackoverflow.com/questions/46445615/localstorage-getitemkey-sometimes-returns-null-in-a-react-app

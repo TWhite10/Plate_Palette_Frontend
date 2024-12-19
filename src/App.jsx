@@ -12,6 +12,20 @@ import About from "./components/pages/About";
 import Login from "./components/userLog/Login.jsx";
 import './styles/App.css'
 
+export const isLoggedIn = () => {
+  return localStorage.getItem("token") !== null;
+};
+
+export const logout = () => {
+  localStorage.removeItem("token");
+  window.location.href = "/login";
+};
+export const getAuthToken = () => {
+  return localStorage.getItem("token");
+};
+
+
+
 function App() {
   return (
     <div className='App'>
