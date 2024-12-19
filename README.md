@@ -22,3 +22,5 @@ https://www.geeksforgeeks.org/navigate-component-in-react-router/
 https://www.w3schools.com/react/react_forms.asp
 
 https://stackoverflow.com/questions/63162506/how-can-i-only-show-100-characters-of-a-post
+
+https://medium.com/@ryaddev/creating-a-stunning-category-grid-with-react-and-css-31055a0ab60c

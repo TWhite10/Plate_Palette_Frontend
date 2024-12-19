@@ -1,21 +1,25 @@
 html{
-    border-left: 5px solid lightgray;
+    border-left: 5px solid white;
   } 
 body{
     min-height: 100vh;
     font-family: sans-serif;
     margin: 1000px;
     margin: 0 auto;
+    background: linear-gradient(to top, #0099ff 0%, #9966ff 100%);
   }
 header, main, footer {
     padding: 1rem 2rem;
   }
 
 h1 {
-    color: tomato;
+    color: white;
+    
   }
 header h1 {
     font-size: 3rem;
+    font-family: cursive;
+    font-weight: bolder;
 }
 
 img{
@@ -29,14 +33,11 @@ img{
     justify-content: space-between;
 }
 header .nav-bar a {
-    color: lightgray;
+    color: white;
 }
 
-time {
-    color: lightgray;
-}
 footer .nav-bar a{
-    color: tomato;
+    color: whitesmoke;
     
 }
 .blog-title {
@@ -45,25 +46,92 @@ footer .nav-bar a{
 span a {
     display: flex;
     justify-content: end;
-    color: tomato;
+    color: whitesmoke;
     font-weight: bold;
-    text-decoration:none ;
+    text-decoration:none;
     
 }
-
-article {
-    margin-bottom: 4rem;
-    border-bottom: 1px solid lightgray;
-    padding-bottom: 2rem;
+a {
+    text-decoration: none;
+    text-shadow: 3px 0px 2px rgba(0,0,0,0.2);
+    
+  }
+.home-page {
+    min-height: 100vh;
+    background: linear-gradient(to top, #000066 0%, #003366 100%);
+    padding: 20px;
+  }
+.home-page{
+    min-height: 100vh;
+    background-image: url("/public/assets/HomepagePic.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    overlay:auto ;
+    position: relative; 
+}
+.create-recipe {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  textarea {
+    width: 100%;
+    padding: 8px;
   }
 
-article p::first-letter {
-    color: lightgray;
-    font-size: 3rem;
-    float: left;
-    line-height: 0.8;
-    padding-right: 0.5rem;
+  .recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  .recipe-card {
+    border: 1px solid black;
+    background-color: rgb(37, 60, 131);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    
+  }
+  .login-page,
+  .register-page {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  input {
+    padding: 8px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+  }
+  button {
+    padding: 10px;
+    background-color: tomato;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: green;
+  }
+  form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .categories-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .categories-container h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
   }
 .copyright{
-    color: lightgray; 
+    color: black; 
 }
